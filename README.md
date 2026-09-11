@@ -1,10 +1,10 @@
-
-
-<div class="wrapper">
-  <div class="container">
-    <div class="content-box">
-      <div class="text-wrapper">
-        <p class="status-message">Classifying every single element into its own <div> because unstyled HTML is too mainstream. 📦 #WDD130</p>
+<div class="everything">
+  <div class="because">
+    <div class="unstyled-html">
+      <div class="is-too">
+        <div class="mainstream">
+          <p>Over-divving since Week 1. 📦 #WDD130</p>
+        </div>
       </div>
     </div>
   </div>
