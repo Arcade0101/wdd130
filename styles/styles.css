@@ -1,12 +1,32 @@
+/* Navigation styling */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
+/* Heading styling */
+h1 {
+  color: #222;
+}
+
 /* Limiting main width */
 main {
   max-width: 840px;
 }
 
-/* Specific profile image styling inside main */
+/* Profile image inside main */
 main img {
   width: 150px;
   height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Aside section styling */
