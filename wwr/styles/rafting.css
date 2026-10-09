@@ -1150,3 +1150,51 @@ section img {
     max-height: 70px;
   }
 }
+
+/* Home page rafting feature cards only */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+  align-items: stretch;
+}
+
+.home-grid .grid-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.home-grid .grid-card img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-grid .grid-card h3 {
+  margin: 1.25rem 1.25rem 0.5rem;
+}
+
+.home-grid .grid-card p {
+  margin: 0 1.25rem 1.5rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 650px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .home-grid .grid-card img {
+    height: 240px;
+  }
+}
