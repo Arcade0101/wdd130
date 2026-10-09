@@ -1275,3 +1275,10 @@ section img {
   bottom: auto;
   transform: translateY(-50%);
 }
+
+/* Align hero heading without changing the image */
+.hero h1 {
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
