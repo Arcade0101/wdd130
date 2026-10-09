@@ -252,3 +252,21 @@ footer {
   width: 28px;
   height: 28px;
 }
+
+/* Maintain aspect ratio and crop cleanly inside grids */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.adventure-grid img,
+.history-grid img,
+figure img,
+section img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
