@@ -270,11 +270,3 @@ section img {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* High-res hero banner layout */
-.hero img, #hero img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    display: block;
-}
