@@ -1231,3 +1231,40 @@ section img {
     height: 300px;
   }
 }
+
+/* Correct hero image crop and heading placement */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero > img {
+  display: block;
+  width: 100%;
+  height: clamp(300px, 45vw, 520px);
+  object-fit: cover;
+  object-position: center center;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+  background: transparent;
+}
+
+@media (max-width: 600px) {
+  .hero > img {
+    height: 300px;
+  }
+}
