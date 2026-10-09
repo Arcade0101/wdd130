@@ -1,85 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us | Whitewater Rafting Adventures</title>
-  <meta name="description"
-    content="Learn about our history, mission, and guided whitewater rafting trips.">
+  <meta name="description" content="Discover the story, mission, and adventures of Whitewater Rafting Adventures.">
   <meta name="author" content="Mudandi Arcade">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
-<body>
+<body class="about-page">
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Logo" class="logo">
-    <nav>
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures logo" class="logo">
+    <nav aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
+      <a href="about.html" aria-current="page">About Us</a>
       <a href="trips.html">Trips</a>
       <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
-    <div class="hero">
-      <img src="images/hero.jpg" alt="Rafting on river rapids">
-      <h1>Whitewater Rafting Adventures</h1>
-      <article>
-        <img src="images/happy-client.jpg" alt="Happy client enjoying rafting trip">
-        <h2>Our Mission</h2>
-        <p>To provide safe, thrilling, and memorable whitewater rafting experiences while preserving
-          the natural beauty of river ecosystems.</p>
-      </article>
-    </div>
-
-    <section class="history">
-      <h2>History</h2>
-      <div class="history-content">
-        <p>Founded in 1998, Whitewater Rafting Adventures started with two rafts and a passion for
-          river exploration...</p>
-        <img src="images/history.jpg" alt="Historical photo of rafting equipment">
-        <p>Over the past two decades, we have guided thousands of adventurers through class III to V
-          rapids across the country...</p>
+    <section class="about-hero" aria-labelledby="about-title">
+      <img class="about-hero-image" src="images/hero.jpg" alt="Whitewater rafting through powerful river rapids">
+      <div class="about-hero-overlay"></div>
+      <div class="about-hero-content">
+        <span class="about-eyebrow">ADVENTURE STARTS HERE</span>
+        <h1 id="about-title">More Than a Rafting Trip</h1>
+        <p>Wild rivers. Incredible people. Memories that last a lifetime.</p>
+        <a class="about-cta" href="trips.html">Explore Our Trips</a>
       </div>
     </section>
 
-    <section class="adventures">
-      <h2>Adventure Awaits You!</h2>
-      <div class="adventures-container">
+    <section class="about-intro">
+      <div class="about-intro-copy">
+        <span class="about-eyebrow">WHO WE ARE</span>
+        <h2>Built on a Passion for the River</h2>
+        <p>Since 1998, Whitewater Rafting Adventures has helped people discover the excitement, beauty, and challenge of whitewater rafting.</p>
+        <p>Whether it is your first time on the water or your next big expedition, our goal is to make every journey safe, welcoming, and unforgettable.</p>
+      </div>
+      <figure class="about-intro-image">
+        <img src="images/happy-client.jpg" alt="A guest enjoying a memorable rafting experience" loading="lazy">
+        <figcaption>Every river has a story. Be part of ours.</figcaption>
+      </figure>
+    </section>
+
+    <section class="about-mission">
+      <div class="about-mission-inner">
+        <span class="about-eyebrow">OUR MISSION</span>
+        <h2>Adventure With Purpose</h2>
+        <p>To provide safe, thrilling, and memorable whitewater rafting experiences while protecting the natural beauty of the rivers we explore.</p>
+        <div class="about-values">
+          <article>
+            <span class="about-value-number">01</span>
+            <h3>Safety First</h3>
+            <p>Thoughtful preparation, experienced guides, and respect for the river.</p>
+          </article>
+          <article>
+            <span class="about-value-number">02</span>
+            <h3>Real Adventure</h3>
+            <p>Exciting experiences for beginners, families, and seasoned rafters.</p>
+          </article>
+          <article>
+            <span class="about-value-number">03</span>
+            <h3>Respect Nature</h3>
+            <p>Enjoying the outdoors while caring for the places that make it special.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-history">
+      <div class="about-history-image">
+        <img src="images/history.jpg" alt="A look back at the history of rafting adventures" loading="lazy">
+      </div>
+      <div class="about-history-copy">
+        <span class="about-eyebrow">OUR STORY</span>
+        <h2>From Two Rafts to Countless Memories</h2>
+        <p>Founded in 1998, Whitewater Rafting Adventures began with two rafts, a love of river exploration, and a simple ambition: to share the thrill of the water with others.</p>
+        <p>Over the years, our adventures have brought together families, friends, and explorers looking for something beyond the ordinary.</p>
+        <p>Our spirit remains the same today: respect the river, look after one another, and make every trip count.</p>
+      </div>
+    </section>
+
+    <section class="about-adventures">
+      <div class="about-section-heading">
+        <span class="about-eyebrow">FIND YOUR NEXT ADVENTURE</span>
+        <h2>Every River Has a Story</h2>
+        <p>Take a look at the experiences waiting for you on the water.</p>
+      </div>
+      <div class="about-adventure-grid">
         <figure>
-          <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapid">
-          <figcaption>Los Dientes del Diablo</figcaption>
+          <img src="images/adventure1.jpg" alt="Raft navigating the Los Dientes del Diablo rapids" loading="lazy">
+          <figcaption><span>01 / THE CHALLENGE</span><h3>Los Dientes del Diablo</h3></figcaption>
         </figure>
         <figure>
-          <img src="images/adventure2.jpg" alt="Big Mallard rapid">
-          <figcaption>Big Mallard</figcaption>
+          <img src="images/adventure2.jpg" alt="Whitewater action on Big Mallard rapid" loading="lazy">
+          <figcaption><span>02 / THE RUSH</span><h3>Big Mallard</h3></figcaption>
         </figure>
         <figure>
-          <img src="images/adventure3.jpg" alt="Half Day Adventure trip">
-          <figcaption>Half Day Adventure</figcaption>
+          <img src="images/adventure3.jpg" alt="Guests enjoying a half-day rafting adventure" loading="lazy">
+          <figcaption><span>03 / THE GETAWAY</span><h3>Half Day Adventure</h3></figcaption>
         </figure>
         <figure>
-          <img src="images/adventure4.jpg" alt="Grand Canyon Run trip">
-          <figcaption>Grand Canyon Run</figcaption>
+          <img src="images/adventure4.jpg" alt="A rafting expedition through a dramatic canyon" loading="lazy">
+          <figcaption><span>04 / THE JOURNEY</span><h3>Grand Canyon Run</h3></figcaption>
         </figure>
         <figure>
-          <img src="images/adventure5.jpg" alt="Full Day Expedition trip">
-          <figcaption>Full Day Expedition</figcaption>
+          <img src="images/adventure5.jpg" alt="Rafters enjoying a full-day river expedition" loading="lazy">
+          <figcaption><span>05 / THE EXPEDITION</span><h3>Full Day Expedition</h3></figcaption>
         </figure>
       </div>
+    </section>
+
+    <section class="about-final-cta">
+      <span class="about-eyebrow">YOUR NEXT CHAPTER STARTS HERE</span>
+      <h2>Ready to Get on the Water?</h2>
+      <p>Find the trip that matches your sense of adventure.</p>
+      <a class="about-cta" href="trips.html">Discover Our Trips</a>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Whitewater Rafting Adventures | Mudandi Arcade</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon"></a>
-      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon"></a>
-      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram icon"></a>
+    <nav class="socialmedia" aria-label="Social media">
+      <a href="https://facebook.com" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a>
     </nav>
   </footer>
 </body>
-
 </html>
