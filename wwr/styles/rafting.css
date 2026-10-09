@@ -56,15 +56,16 @@ nav a:hover {
 .hero {
   position: relative;
   width: 100%;
+  height: clamp(260px, 38vw, 450px);
   overflow: hidden;
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
-  max-height: 450px;
-  object-fit: cover;
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 50%;
 }
 
 .hero h1 {
@@ -72,10 +73,12 @@ nav a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: max-content;
+  max-width: calc(100% - 2rem);
   background-color: rgba(0, 51, 102, 0.85);
   color: var(--white);
-  padding: 1rem 2.5rem;
-  font-size: 2.2rem;
+  padding: 1rem 2rem;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
   text-align: center;
   border-radius: 4px;
 }
@@ -269,4 +272,82 @@ section img {
     object-position: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact page: consistent employee portraits */
+.employee-grid img {
+  display: block;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 8px;
+}
+
+/* Responsive hero and employee images */
+@media (max-width: 600px) {
+  .hero {
+    height: 280px;
+  }
+
+  .hero h1 {
+    width: auto;
+    white-space: normal;
+    padding: 0.75rem 1rem;
+  }
+
+  .employee-grid img {
+    height: 240px;
+  }
+}
+
+/* Consistent, responsive image sizing */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: clamp(260px, 38vw, 450px);
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.adventure-grid img,
+.history-grid img,
+figure img,
+section img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+.employee-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 280px;
+  }
+
+  .employee-grid img {
+    height: 240px;
+  }
 }
